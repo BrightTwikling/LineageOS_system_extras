@@ -34,6 +34,7 @@ cc_defaults {
 
 cc_library_shared {
     name: "liblpdump",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
@@ -65,6 +66,7 @@ cc_library_shared {
 
 cc_binary {
     name: "lpdump",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
@@ -102,6 +104,7 @@ cc_binary {
 
 cc_binary {
     name: "lpmake",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
@@ -121,6 +124,7 @@ cc_binary {
 
 cc_binary {
     name: "lpadd",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
@@ -136,6 +140,7 @@ cc_binary {
 
 cc_binary {
     name: "lpflash",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
@@ -150,6 +155,7 @@ cc_binary {
 
 cc_binary {
     name: "lpdumpd",
+    recovery_available: true,
     defaults: [
         "lp_defaults",
         "libsnapshot_cow_defaults",
@@ -177,6 +183,7 @@ cc_binary {
 
 cc_binary {
     name: "lpunpack",
+    recovery_available: true,
     defaults: ["lp_defaults"],
     host_supported: true,
     shared_libs: [
