@@ -19,6 +19,7 @@ license {
 
 cc_library_shared {
     name: "libf2fs_sparseblock",
+    recovery_available: true,
     cflags: ["-Werror"],
 
     srcs: ["f2fs_sparseblock.c"],

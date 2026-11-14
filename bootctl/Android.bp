@@ -19,6 +19,7 @@ license {
 
 cc_binary {
     name: "bootctl",
+    recovery_available: true,
     srcs: ["bootctl.cpp"],
 
     cflags: [
